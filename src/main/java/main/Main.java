@@ -1,5 +1,6 @@
 package main;
 
+<<<<<<< HEAD
 import utils.DBConnection;
 import java.sql.Connection;
 
@@ -18,5 +19,24 @@ public class Main {
         } else {
             System.out.println("❌ Connexion échouée !");
         }
+=======
+import javafx.application.Application;
+import javafx.stage.Stage;
+import utils.SceneManager;
+import views.Back.BackDashboardView;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) {
+        SceneManager.init(stage);
+        SceneManager.show(new BackDashboardView());
+        stage.setTitle("Fin Tokhroj");
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+>>>>>>> db5ee53 (Template)
     }
 }
